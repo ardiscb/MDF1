@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  MDF1app1
 //
-//  Created by Courtney Ardis on 4/8/13.
+//  Created by Courtney Ardis on 4/9/13.
 //  Copyright (c) 2013 Courtney Ardis. All rights reserved.
 //
 
@@ -16,7 +16,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
+    } else {
+        self.viewController = [[ViewController alloc] initWithNibName:@"ViewController_iPad" bundle:nil];
+    }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
