@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
-
+@protocol DetailViewDelegate <NSObject>
+//initialize methods here
+-(void)DidSave:(NSString*)titleEvent dateString:(NSString*)date;
 @end
+
+@interface DetailViewController : UIViewController
+{
+    id<DetailViewDelegate> delegate;
+}
+
+//set delegate from outside of main view
+@property (strong) id<DetailViewDelegate> delegate;
+@end
+
+

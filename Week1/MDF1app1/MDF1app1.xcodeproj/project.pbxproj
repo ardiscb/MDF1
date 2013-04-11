@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3A26F1171634DF0009F03C /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3A26F0171634DF0009F03C /* DetailView.xib */; };
 		FA3A26F4171635290009F03C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA3A26F3171635290009F03C /* DetailViewController.m */; };
+		FA3A26F61716512F0009F03C /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3A26F51716512F0009F03C /* DetailViewController.xib */; };
 		FAECD3A11714BCF500ED2968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAECD3A01714BCF500ED2968 /* UIKit.framework */; };
 		FAECD3A31714BCF500ED2968 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAECD3A21714BCF500ED2968 /* Foundation.framework */; };
 		FAECD3A51714BCF500ED2968 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAECD3A41714BCF500ED2968 /* CoreGraphics.framework */; };
@@ -24,9 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA3A26F0171634DF0009F03C /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		FA3A26F2171635290009F03C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FA3A26F3171635290009F03C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA3A26F51716512F0009F03C /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FAECD39D1714BCF500ED2968 /* MDF1app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1app1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAECD3A01714BCF500ED2968 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAECD3A21714BCF500ED2968 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,7 +98,7 @@
 				FAECD3BE1714BCF500ED2968 /* ViewController_iPad.xib */,
 				FA3A26F2171635290009F03C /* DetailViewController.h */,
 				FA3A26F3171635290009F03C /* DetailViewController.m */,
-				FA3A26F0171634DF0009F03C /* DetailView.xib */,
+				FA3A26F51716512F0009F03C /* DetailViewController.xib */,
 				FAECD3A71714BCF500ED2968 /* Supporting Files */,
 			);
 			path = MDF1app1;
@@ -175,7 +175,7 @@
 				FAECD3B71714BCF500ED2968 /* Default-568h@2x.png in Resources */,
 				FAECD3BD1714BCF500ED2968 /* ViewController_iPhone.xib in Resources */,
 				FAECD3C01714BCF500ED2968 /* ViewController_iPad.xib in Resources */,
-				FA3A26F1171634DF0009F03C /* DetailView.xib in Resources */,
+				FA3A26F61716512F0009F03C /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

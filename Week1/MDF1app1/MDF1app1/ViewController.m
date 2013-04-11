@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -82,6 +83,16 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //catches what row is selected
     NSLog(@"row=%d name=%@", indexPath.row, [comicCharactersArray objectAtIndex:indexPath.row]);
+    
+    //open second view
+    DetailViewController *secondView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if(secondView != nil)
+    {
+        secondView.delegate = self;
+        [self presentViewController:secondView animated:true completion:nil];
+    }
+
 }
 @end

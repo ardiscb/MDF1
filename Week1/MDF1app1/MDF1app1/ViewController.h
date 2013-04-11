@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailViewController.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDelegate, DetailViewDelegate>
 {
     IBOutlet UITableView *tableView;
     IBOutlet UIButton *deleteBtn;
     
     NSMutableArray *comicCharactersArray;
 }
+-(IBAction)onClick:(id)sender;
 @end
