@@ -31,6 +31,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)getInfo:(NSString*)heroName rowNumber:(NSInteger*)row
+{
+    //placeholder delegate method -- change variable names
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [comicCharactersArray count];

@@ -10,7 +10,7 @@
 
 @protocol DetailViewDelegate <NSObject>
 //initialize methods here
--(void)DidSave:(NSString*)titleEvent dateString:(NSString*)date;
+-(void)getInfo:(NSString*)heroName rowNumber:(NSInteger*)row;
 @end
 
 @interface DetailViewController : UIViewController
