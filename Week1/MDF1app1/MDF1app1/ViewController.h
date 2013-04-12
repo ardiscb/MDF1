@@ -9,13 +9,16 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailViewController.h"
+#import "CustomTableViewController.h"
 
 @interface ViewController : UIViewController <UITableViewDelegate, DetailViewDelegate>
 {
-    IBOutlet UITableView *tableView;
+    IBOutlet UITableView *heroTable;
     IBOutlet UIButton *deleteBtn;
+    IBOutlet UIButton *doneBtn;
     
     NSMutableArray *comicCharactersArray;
+    NSMutableArray *comicTeamArray;
 }
 -(IBAction)onClick:(id)sender;
 @end

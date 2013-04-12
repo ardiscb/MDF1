@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DetailViewController.h"
+#import "CustomTableViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,9 @@
 
 - (void)viewDidLoad
 {
+    doneBtn.hidden = true;
     comicCharactersArray = [[NSMutableArray alloc] initWithObjects:@"Dr. Strange", @"Human Torch", @"Rogue", @"The Thing", @"Gambit", @"Iron Fist", @"Luke Cage", @"Wolverine", @"Captain America", @"Spiderman", @"Iron Man", @"Hulk", @"Deadpool", @"Thor", @"Cyclops", @"Nova", @"Mr. Fantastic", @"Daredevil", @"The Vision", @"Mrs. Marvel", nil];
+    comicTeamArray = [[NSMutableArray alloc] initWithObjects:@"Marvel", @"Marvel", @"Marvel", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -39,24 +42,35 @@
 {
     return [comicCharactersArray count];
 }
+
 //on click of delete button
 -(IBAction)onClick:(id)sender
 {
-    if(deleteBtn.enabled == true)
+    UIButton *button = (UIButton*)sender;
+    //if delete button is clicked
+    if(button.tag == 0)
     {
-        [tableView setEditing:true];
+        //display done button
+        doneBtn.hidden = false;
+        //in edit mode
+        [heroTable setEditing:true];
+
     }
-    //figure out how to get out of edit mode if delete button is clicked while in edit mode(essentially when delete is clicked again)
-//    else if()
-//    {
-//        [tableView setEditing:false];
-//    }
+    //if done button is clicked
+    else if(button.tag == 1)
+    {
+        //get out edit mode
+        [heroTable setEditing:false];
+        //hide done button
+        doneBtn.hidden = true;
+    }
+
 }
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewCellEditingStyleDelete;
 }
-- (void)tableView:(UITableView *)tableView2 commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //In editing mode
     if (editingStyle == UITableViewCellEditingStyleDelete)
@@ -66,19 +80,50 @@
         //Delete row from array
         [comicCharactersArray removeObjectAtIndex:indexPath.row];
         //Delete row from tableView
-        [tableView2 deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
+        [heroTable deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
         
         NSLog(@"We have successfully deleted row = %d", indexPath.row);
     }
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView3 cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+//////////////////////////////////////////////////////
+//Worked for hours trying to get the array items to //
+//display in the table view using the custom cell   //
+//////////////////////////////////////////////////////
+    
+    
+//    static NSString *CellIdentifier = @"Cell";
+//    
+//    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if(cell == nil)
+//    {
+//        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//
+//        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+//        UINib* customNib = [UINib nibWithNibName:@"CustomCellView" bundle:nil];
+//        [heroTable registerNib:customNib forCellReuseIdentifier:CellIdentifier];
+//        for(UIView *view in views)
+//        {
+//            if([view isKindOfClass:[CustomTableViewController class]])
+//            {
+//                cell = (CustomTableViewController*)view;
+//                //add array to rows
+//                cell.characterName.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
+//                cell.teamLabel.text = (NSString *)[comicTeamArray objectAtIndex:indexPath.row];
+//            }
+//        }
+//    }
+//    return cell;
+
+    //default table view
+    
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView3 dequeueReusableCellWithIdentifier:CellIdentifier];
+    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     cell.textLabel.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
