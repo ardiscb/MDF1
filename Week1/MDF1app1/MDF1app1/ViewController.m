@@ -18,9 +18,10 @@
 
 - (void)viewDidLoad
 {
+    //hide done button at load
     doneBtn.hidden = true;
     comicCharactersArray = [[NSMutableArray alloc] initWithObjects:@"Dr. Strange", @"Human Torch", @"Rogue", @"The Thing", @"Gambit", @"Iron Fist", @"Luke Cage", @"Wolverine", @"Captain America", @"Spiderman", @"Iron Man", @"Hulk", @"Deadpool", @"Thor", @"Cyclops", @"Nova", @"Mr. Fantastic", @"Daredevil", @"The Vision", @"Mrs. Marvel", nil];
-    comicTeamArray = [[NSMutableArray alloc] initWithObjects:@"Marvel", @"Marvel", @"Marvel", nil];
+    comicTeamArray = [[NSMutableArray alloc] initWithObjects:@"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -34,10 +35,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)getInfo:(NSString*)heroName rowNumber:(NSInteger*)row
-{
-    //placeholder delegate method -- change variable names
-}
+//-(void)getInfo:(NSString*)heroName rowNumber:(NSInteger*)row
+//{
+//    //placeholder delegate method -- change variable names
+//}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [comicCharactersArray count];
@@ -87,48 +88,42 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//////////////////////////////////////////////////////
-//Worked for hours trying to get the array items to //
-//display in the table view using the custom cell   //
-//////////////////////////////////////////////////////
+    static NSString *CellIdentifier = @"Cell";
     
+    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell == nil)
+    {
+        //cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+
+        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
+        //UINib* customNib = [UINib nibWithNibName:@"CustomCellView" bundle:nil];
+        //[heroTable registerNib:customNib forCellReuseIdentifier:CellIdentifier];
+        for(UIView *view in views)
+        {
+            if([view isKindOfClass:[CustomTableViewController class]])
+            {
+                cell = (CustomTableViewController*)view;
+                //add array to rows
+                cell.characterName.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
+                cell.teamLabel.text = (NSString *)[comicTeamArray objectAtIndex:indexPath.row];
+            }
+        }
+    }
+    return cell;
+
+    //default table view
     
 //    static NSString *CellIdentifier = @"Cell";
 //    
 //    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
 //    if(cell == nil)
 //    {
-//        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//
-//        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
-//        UINib* customNib = [UINib nibWithNibName:@"CustomCellView" bundle:nil];
-//        [heroTable registerNib:customNib forCellReuseIdentifier:CellIdentifier];
-//        for(UIView *view in views)
-//        {
-//            if([view isKindOfClass:[CustomTableViewController class]])
-//            {
-//                cell = (CustomTableViewController*)view;
-//                //add array to rows
-//                cell.characterName.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
-//                cell.teamLabel.text = (NSString *)[comicTeamArray objectAtIndex:indexPath.row];
-//            }
-//        }
+//        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 //    }
+//    
+//    cell.textLabel.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
+//    
 //    return cell;
-
-    //default table view
-    
-    static NSString *CellIdentifier = @"Cell";
-    
-    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
-    if(cell == nil)
-    {
-        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    cell.textLabel.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
-    
-    return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -139,7 +134,7 @@
     DetailViewController *secondView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if(secondView != nil)
     {
-        secondView.delegate = self;
+        //secondView.delegate = self;
         [self presentViewController:secondView animated:true completion:nil];
     }
 

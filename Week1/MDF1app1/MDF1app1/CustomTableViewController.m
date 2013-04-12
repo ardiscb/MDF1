@@ -9,7 +9,8 @@
 #import "CustomTableViewController.h"
 
 @implementation CustomTableViewController
-@synthesize characterName, teamLabel;
+@synthesize characterName;
+@synthesize teamLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

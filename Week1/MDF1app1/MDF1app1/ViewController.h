@@ -11,7 +11,7 @@
 #import "DetailViewController.h"
 #import "CustomTableViewController.h"
 
-@interface ViewController : UIViewController <UITableViewDelegate, DetailViewDelegate>
+@interface ViewController : UIViewController <UITableViewDelegate>//, DetailViewDelegate>
 {
     IBOutlet UITableView *heroTable;
     IBOutlet UIButton *deleteBtn;
