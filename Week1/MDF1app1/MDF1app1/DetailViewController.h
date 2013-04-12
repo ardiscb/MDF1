@@ -8,18 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-//@protocol DetailViewDelegate <NSObject>
-////initialize methods here
-//-(void)getInfo:(NSString*)heroName rowNumber:(NSInteger*)row;
-//@end
-
 @interface DetailViewController : UIViewController
 {
-    //id<DetailViewDelegate> delegate;
+    IBOutlet UIButton *backBtn;
 }
+-(IBAction)onClick:(id)sender;
 
-//set delegate from outside of main view
-//@property (strong) id<DetailViewDelegate> delegate;
+@property IBOutlet UILabel *characterLabel;
+@property IBOutlet UILabel *team;
+@property IBOutlet UILabel *info;
 @end
 
 

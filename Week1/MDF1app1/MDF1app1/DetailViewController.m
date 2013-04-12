@@ -31,6 +31,16 @@
 	// Do any additional setup after loading the view.
 }
 
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    //if back button is clicked
+    if(button.tag == 0)
+    {
+        [self dismissViewControllerAnimated:TRUE completion:nil];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

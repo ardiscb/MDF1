@@ -22,6 +22,7 @@
     doneBtn.hidden = true;
     comicCharactersArray = [[NSMutableArray alloc] initWithObjects:@"Dr. Strange", @"Human Torch", @"Rogue", @"The Thing", @"Gambit", @"Iron Fist", @"Luke Cage", @"Wolverine", @"Captain America", @"Spiderman", @"Iron Man", @"Hulk", @"Deadpool", @"Thor", @"Cyclops", @"Nova", @"Mr. Fantastic", @"Daredevil", @"The Vision", @"Mrs. Marvel", nil];
     comicTeamArray = [[NSMutableArray alloc] initWithObjects:@"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", @"Marvel", nil];
+    infoArray = [[NSMutableArray alloc] initWithObjects:@"Real name: Dr. Steven Strange\nFormerly:Heart Surgeon", @"Real name: Johnny Storm\nFormerly:Unemployeed rich boy", @"Real Name:Anna Marie\nFormerly:Student", @"Real name:Benjamin Grimm\nFormerly: Pilot", @"Real name: Remy LaBeau\nFormerly:Theif", @"Real name: Danny Rand\nFormerly: Son of a rich socialite", @"Real name: Luke Cage\nFormerly: Gang member", @"Real name: James Howlett III\nFormerly: Kid", @"Real name: Steve Rogers\nFormerly: Graduate pursuing military ambitions", @"Real name: Peter Parker\nFormerly: Amateur photographer", @"Real name: Anthony Stark\nFormerly: Genius, Millionaire, Playboy, Philanthorpist", @"Real name: Bruce Banner\nFormerly: Research scientist", @"Real name: Wade Wilson\nFormerly: Mercenary", @"Real name: Thor Odenson\nFormerly: God, always has been and always will be", @"Real name: Scott Summers\nFormerly:Student", @"Real name: Richard Rider\nFormerly:Student", @"Real name: Reed Richards\nFormerly: Research Scientist", @"Real name: Matt Murdock\nFormerly: Defense Attorney", @"Real name: The Vision\nFormerly: Synthetic lifeform, always has been and always will be", @"Real name: Carol Danvers\nFormerly: Member of the United States Airforce", nil];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -96,35 +97,19 @@
         //cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
-        //UINib* customNib = [UINib nibWithNibName:@"CustomCellView" bundle:nil];
-        //[heroTable registerNib:customNib forCellReuseIdentifier:CellIdentifier];
         for(UIView *view in views)
         {
             if([view isKindOfClass:[CustomTableViewController class]])
             {
                 cell = (CustomTableViewController*)view;
-                //add array to rows
+                //add arrays to rows
                 cell.characterName.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
                 cell.teamLabel.text = (NSString *)[comicTeamArray objectAtIndex:indexPath.row];
             }
         }
     }
     return cell;
-
-    //default table view
-    
-//    static NSString *CellIdentifier = @"Cell";
-//    
-//    CustomTableViewController *cell = [heroTable dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if(cell == nil)
-//    {
-//        cell = [[CustomTableViewController alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
-//    
-//    cell.textLabel.text = (NSString *)[comicCharactersArray objectAtIndex:indexPath.row];
-//    
-//    return cell;
-}
+} 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //catches what row is selected
@@ -136,7 +121,11 @@
     {
         //secondView.delegate = self;
         [self presentViewController:secondView animated:true completion:nil];
+        secondView.characterLabel.text = [comicCharactersArray objectAtIndex:indexPath.row];
+        secondView.team.text = [comicTeamArray objectAtIndex:indexPath.row];
+        secondView.info.text = [infoArray objectAtIndex:indexPath.row];
     }
+    
 
 }
 @end

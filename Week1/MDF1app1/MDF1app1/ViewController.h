@@ -19,6 +19,7 @@
     
     NSMutableArray *comicCharactersArray;
     NSMutableArray *comicTeamArray;
+    NSMutableArray *infoArray;
 }
 -(IBAction)onClick:(id)sender;
 @end
