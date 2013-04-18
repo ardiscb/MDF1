@@ -30,6 +30,8 @@
 		FA022603171F6FBF008D313E /* SecondNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA022602171F6FBF008D313E /* SecondNavViewController.m */; };
 		FA022605171F71A9008D313E /* ThirdNavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA022604171F71A9008D313E /* ThirdNavViewController.xib */; };
 		FA022608171F71B9008D313E /* ThirdNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA022607171F71B9008D313E /* ThirdNavViewController.m */; };
+		FA02260A171F8162008D313E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA022609171F8161008D313E /* DetailViewController.xib */; };
+		FA02260D171F817A008D313E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02260C171F8179008D313E /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,9 @@
 		FA022604171F71A9008D313E /* ThirdNavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdNavViewController.xib; sourceTree = "<group>"; };
 		FA022606171F71B9008D313E /* ThirdNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdNavViewController.h; sourceTree = "<group>"; };
 		FA022607171F71B9008D313E /* ThirdNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdNavViewController.m; sourceTree = "<group>"; };
+		FA022609171F8161008D313E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FA02260B171F8179008D313E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FA02260C171F8179008D313E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +126,9 @@
 				FA0225E8171F6CA4008D313E /* SecondViewController.h */,
 				FA0225E9171F6CA4008D313E /* SecondViewController.m */,
 				FA0225F2171F6CA4008D313E /* SecondViewController.xib */,
+				FA02260B171F8179008D313E /* DetailViewController.h */,
+				FA02260C171F8179008D313E /* DetailViewController.m */,
+				FA022609171F8161008D313E /* DetailViewController.xib */,
 				FA0225EB171F6CA4008D313E /* second.png */,
 				FA0225ED171F6CA4008D313E /* second@2x.png */,
 				FA0225FC171F6CFA008D313E /* ThirdViewController.h */,
@@ -215,6 +223,7 @@
 				FA0225FB171F6CEA008D313E /* ThirdViewController.xib in Resources */,
 				FA022600171F6FA9008D313E /* SecondNavViewController.xib in Resources */,
 				FA022605171F71A9008D313E /* ThirdNavViewController.xib in Resources */,
+				FA02260A171F8162008D313E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +241,7 @@
 				FA0225FE171F6CFA008D313E /* ThirdViewController.m in Sources */,
 				FA022603171F6FBF008D313E /* SecondNavViewController.m in Sources */,
 				FA022608171F71B9008D313E /* ThirdNavViewController.m in Sources */,
+				FA02260D171F817A008D313E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
