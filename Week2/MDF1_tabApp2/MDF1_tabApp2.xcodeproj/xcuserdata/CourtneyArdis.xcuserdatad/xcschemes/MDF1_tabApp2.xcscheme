@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FA022562171F43CD008D313E"
-               BuildableName = "MDF1_app2.app"
-               BlueprintName = "MDF1_app2"
-               ReferencedContainer = "container:MDF1_app2.xcodeproj">
+               BlueprintIdentifier = "FA0225C5171F6CA4008D313E"
+               BuildableName = "MDF1_tabApp2.app"
+               BlueprintName = "MDF1_tabApp2"
+               ReferencedContainer = "container:MDF1_tabApp2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA022562171F43CD008D313E"
-            BuildableName = "MDF1_app2.app"
-            BlueprintName = "MDF1_app2"
-            ReferencedContainer = "container:MDF1_app2.xcodeproj">
+            BlueprintIdentifier = "FA0225C5171F6CA4008D313E"
+            BuildableName = "MDF1_tabApp2.app"
+            BlueprintName = "MDF1_tabApp2"
+            ReferencedContainer = "container:MDF1_tabApp2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA022562171F43CD008D313E"
-            BuildableName = "MDF1_app2.app"
-            BlueprintName = "MDF1_app2"
-            ReferencedContainer = "container:MDF1_app2.xcodeproj">
+            BlueprintIdentifier = "FA0225C5171F6CA4008D313E"
+            BuildableName = "MDF1_tabApp2.app"
+            BlueprintName = "MDF1_tabApp2"
+            ReferencedContainer = "container:MDF1_tabApp2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FA022562171F43CD008D313E"
-            BuildableName = "MDF1_app2.app"
-            BlueprintName = "MDF1_app2"
-            ReferencedContainer = "container:MDF1_app2.xcodeproj">
+            BlueprintIdentifier = "FA0225C5171F6CA4008D313E"
+            BuildableName = "MDF1_tabApp2.app"
+            BlueprintName = "MDF1_tabApp2"
+            ReferencedContainer = "container:MDF1_tabApp2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

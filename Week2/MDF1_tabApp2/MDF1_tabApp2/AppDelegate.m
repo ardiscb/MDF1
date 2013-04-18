@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  MDF1_app2
+//  MDF1_tabApp2
 //
 //  Created by Courtney Ardis on 4/17/13.
 //  Copyright (c) 2013 Courtney Ardis. All rights reserved.
@@ -8,7 +8,11 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "SecondNavViewController.h"
+#import "ThirdNavViewController.h"
 
 @implementation AppDelegate
 
@@ -17,12 +21,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    //child view
-    ViewController *viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    //add view controllers for tabs
+    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
+    //add navigation controller view to first view
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[ThirdViewController alloc] initWithNibName:@"ThirdViewController" bundle:nil];
     
-    //parent view
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    self.window.rootViewController = navController;
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = @[navController, viewController2, viewController3];
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -53,5 +61,19 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
 
 @end

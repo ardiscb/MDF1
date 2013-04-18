@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MDF1_app2.xcodeproj">
+      location = "self:MDF1_tabApp2.xcodeproj">
    </FileRef>
 </Workspace>
