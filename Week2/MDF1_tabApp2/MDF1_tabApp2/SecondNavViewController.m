@@ -19,6 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //add title to tab and nav bar
          self.title = NSLocalizedString(@"Survival", @"Survival");
         // Custom initialization
     }
@@ -33,6 +34,7 @@
 
 -(IBAction)onClick:(id)sender
 {
+    //create instance of thirdNavView
     ThirdNavViewController *thirdNavView = [[ThirdNavViewController alloc] initWithNibName:@"ThirdNavViewController" bundle:nil];
     if(thirdNavView != nil)
     {

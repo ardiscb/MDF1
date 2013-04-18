@@ -19,7 +19,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Top Movies", @"Top Movies");
+        //add title to tab and nav bar
+        self.title = NSLocalizedString(@"Top 5", @"Top 5");
+        //add image to tab
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
@@ -28,11 +30,11 @@
 - (void)viewDidLoad
 {
     //table array
-    movieTitleArray = [[NSMutableArray alloc] initWithObjects:@"The Cabin in the Woods", @"Beasts of the Southern Wild", @"Looper", @"Argo", @"Lincoln", @"Bernie", @"Searching for Sugar Man", @"The Dark Knight Rises", @"Silver Linings Playbook", @"Zero Dark Thirty", nil];
+    movieTitleArray = [[NSMutableArray alloc] initWithObjects:@"Dawn of the Dead(1979)", @"Day of the Dead(1985)", @"28 Days Later(2003)", @"Dawn of the Dead(2004)", @"Shaun of the Dead(2004)", nil];
     //info array
-    infoArray = [[NSMutableArray alloc] initWithObjects:@"Whedon and Drew Goddard co-wrote the most inventive horror/comedy since 'Scream,' saving their best for the explosive ending.", @"Director Benh Zeitlin and his band of merry filmmakers and actors infused their passion into this Louisiana Bayou fantasy/adventure/drama.", @"The details are wonderful in Rian Johnson's latest noirish adventure - this one profiling contract killers of the future.", @"Affleck continues to grow as a director in this crowd-pleasing free-the-hostages-with-a-fake-movie thriller.", @"Spielberg finds more drama examining behind-the-scene politics than he could muster with a warhorse in World War I. Daniel Day-Lewis delivers the best performance of the year.", @"Charming and quirky, Richard Linklater's profile of a small-town Texas murder is ultimately a testament to the community.", @"Better to know as little as possible going into this documentary, about a talented performer who never made it big in the states.", @"Christopher Nolan wraps up his epic superhero trilogy with an ambitious, bombastic finale.", @"David O. Russell's best film to date says a lot about sports fandom, family and heroic deeds in unexpected places. Also the year's best romance.", @"Gripping, informative and superbly acted, Kathryn Bigelow duplicates the success of 'The Hurt Locker' with the best film of the year.", nil];
+    infoArray = [[NSMutableArray alloc] initWithObjects:@"Legendary horror director George A. Romero took a cleaver to '70s consumerism--and a zombie's head--in his mall-set undead epic.", @"Many rate Romero's genre-creating Night of the Living Dead as superior to Day, but Day of the Dead is Walking Dead creator Robert Kirkman's favorite zombie movie--and one of ours.", @"You can argue until you're blue in the face that this terrifying tale of virus-infected ghouls is not technically a zombie film. Though you will then run the risk of being shot in the head.", @"In Zack Snyder's underrated gorefest, sprinting zombies terrorize Sarah Polley, Ving Rhames, and a hilarious unpleasent Ty Burrell.", @"Director Edgar Wright's loving homeage to the Romero oeuvre was also the best horror-comedy since An American Werewolf in London.", nil];
     //database URL as string
-    databaseURL = @"Database URL:\nhttp://search.ebscohost.com.oclc.fullsail.edu:81/login.aspx?direct=true&db=bwh&AN=84530336&site=ehost-live";
+    databaseURL = @"Database URL:\nhttp://search.ebscohost.com.oclc.fullsail.edu:81/login.aspx?direct=true&db=a9h&AN=57830081&site=ehost-live";
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -45,14 +47,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //create cell identifier
     static NSString *CellIdentifier = @"Cell";
     
+    //create instance of tableView
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if(cell == nil)
     {
+        //create instance of tableView cell
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
+    //add text to cell
     cell.textLabel.text = (NSString *)[movieTitleArray objectAtIndex:indexPath.row];
     
     return cell;

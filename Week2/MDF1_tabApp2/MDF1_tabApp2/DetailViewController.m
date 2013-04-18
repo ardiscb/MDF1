@@ -35,6 +35,7 @@
     //if back button is clicked
     if(button.tag == 0)
     {
+        //dismiss view
         [self dismissViewControllerAnimated:TRUE completion:nil];
     }
 }

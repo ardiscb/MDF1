@@ -18,6 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //add title to tab and nav bar
          self.title = NSLocalizedString(@"Zombie Films", @"Zombie Films");
         // Custom initialization
     }

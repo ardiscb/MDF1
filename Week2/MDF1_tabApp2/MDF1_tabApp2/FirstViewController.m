@@ -19,7 +19,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        //add title to tab and nav bar
         self.title = NSLocalizedString(@"Zombies", @"Zombies");
+        //add image to tab bar
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -27,6 +29,7 @@
 							
 - (void)viewDidLoad
 {
+    //change tint color of nav bar
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +37,7 @@
 
 -(IBAction)onClick:(id)sender
 {
+    //create instance of secondNavView
     SecondNavViewController *secondNavView = [[SecondNavViewController alloc] initWithNibName:@"SecondNavViewController" bundle:nil];
     if(secondNavView != nil)
     {
