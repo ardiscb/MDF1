@@ -13,9 +13,6 @@
 		FA0225D4171F6CA4008D313E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0225D2171F6CA4008D313E /* InfoPlist.strings */; };
 		FA0225D6171F6CA4008D313E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0225D5171F6CA4008D313E /* main.m */; };
 		FA0225DA171F6CA4008D313E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0225D9171F6CA4008D313E /* AppDelegate.m */; };
-		FA0225DC171F6CA4008D313E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0225DB171F6CA4008D313E /* Default.png */; };
-		FA0225DE171F6CA4008D313E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0225DD171F6CA4008D313E /* Default@2x.png */; };
-		FA0225E0171F6CA4008D313E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0225DF171F6CA4008D313E /* Default-568h@2x.png */; };
 		FA0225E3171F6CA4008D313E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0225E2171F6CA4008D313E /* FirstViewController.m */; };
 		FA0225E5171F6CA4008D313E /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0225E4171F6CA4008D313E /* first.png */; };
 		FA0225E7171F6CA4008D313E /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0225E6171F6CA4008D313E /* first@2x.png */; };
@@ -32,10 +29,16 @@
 		FA022608171F71B9008D313E /* ThirdNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA022607171F71B9008D313E /* ThirdNavViewController.m */; };
 		FA02260A171F8162008D313E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA022609171F8161008D313E /* DetailViewController.xib */; };
 		FA02260D171F817A008D313E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02260C171F8179008D313E /* DetailViewController.m */; };
+		FA022611171F9F44008D313E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FA022610171F9F44008D313E /* Default.png */; };
+		FA022613171FA0F2008D313E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA022612171FA0F2008D313E /* Default@2x.png */; };
+		FA022615171FA1C5008D313E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA022614171FA1C5008D313E /* Default-568h@2x.png */; };
+		FA0226171720A714008D313E /* bio_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0226161720A713008D313E /* bio_icon.png */; };
+		FA0226191720A71E008D313E /* bio_icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0226181720A71E008D313E /* bio_icon_retina.png */; };
+		FA02261F1720ABC5008D313E /* aboutClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02261E1720ABC4008D313E /* aboutClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA0225C6171F6CA4008D313E /* MDF1_tabApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1_tabApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0225C6171F6CA4008D313E /* Zombified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zombified.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0225C9171F6CA4008D313E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA0225CB171F6CA4008D313E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA0225CD171F6CA4008D313E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,9 +48,6 @@
 		FA0225D7171F6CA4008D313E /* MDF1_tabApp2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDF1_tabApp2-Prefix.pch"; sourceTree = "<group>"; };
 		FA0225D8171F6CA4008D313E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA0225D9171F6CA4008D313E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA0225DB171F6CA4008D313E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		FA0225DD171F6CA4008D313E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		FA0225DF171F6CA4008D313E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FA0225E1171F6CA4008D313E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		FA0225E2171F6CA4008D313E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		FA0225E4171F6CA4008D313E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -70,6 +70,13 @@
 		FA022609171F8161008D313E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FA02260B171F8179008D313E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FA02260C171F8179008D313E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA022610171F9F44008D313E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FA022612171FA0F2008D313E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FA022614171FA1C5008D313E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA0226161720A713008D313E /* bio_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bio_icon.png; sourceTree = "<group>"; };
+		FA0226181720A71E008D313E /* bio_icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bio_icon_retina.png; sourceTree = "<group>"; };
+		FA02261D1720ABC4008D313E /* aboutClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutClass.h; sourceTree = "<group>"; };
+		FA02261E1720ABC4008D313E /* aboutClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aboutClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +105,7 @@
 		FA0225C7171F6CA4008D313E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA0225C6171F6CA4008D313E /* MDF1_tabApp2.app */,
+				FA0225C6171F6CA4008D313E /* Zombified.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,25 +128,27 @@
 				FA0225E1171F6CA4008D313E /* FirstViewController.h */,
 				FA0225E2171F6CA4008D313E /* FirstViewController.m */,
 				FA0225EF171F6CA4008D313E /* FirstViewController.xib */,
-				FA0225E4171F6CA4008D313E /* first.png */,
-				FA0225E6171F6CA4008D313E /* first@2x.png */,
-				FA0225E8171F6CA4008D313E /* SecondViewController.h */,
-				FA0225E9171F6CA4008D313E /* SecondViewController.m */,
-				FA0225F2171F6CA4008D313E /* SecondViewController.xib */,
-				FA02260B171F8179008D313E /* DetailViewController.h */,
-				FA02260C171F8179008D313E /* DetailViewController.m */,
-				FA022609171F8161008D313E /* DetailViewController.xib */,
-				FA0225EB171F6CA4008D313E /* second.png */,
-				FA0225ED171F6CA4008D313E /* second@2x.png */,
-				FA0225FC171F6CFA008D313E /* ThirdViewController.h */,
-				FA0225FD171F6CFA008D313E /* ThirdViewController.m */,
-				FA0225FA171F6CEA008D313E /* ThirdViewController.xib */,
 				FA022601171F6FBF008D313E /* SecondNavViewController.h */,
 				FA022602171F6FBF008D313E /* SecondNavViewController.m */,
 				FA0225FF171F6FA9008D313E /* SecondNavViewController.xib */,
 				FA022606171F71B9008D313E /* ThirdNavViewController.h */,
 				FA022607171F71B9008D313E /* ThirdNavViewController.m */,
 				FA022604171F71A9008D313E /* ThirdNavViewController.xib */,
+				FA0225E8171F6CA4008D313E /* SecondViewController.h */,
+				FA0225E9171F6CA4008D313E /* SecondViewController.m */,
+				FA0225F2171F6CA4008D313E /* SecondViewController.xib */,
+				FA02260B171F8179008D313E /* DetailViewController.h */,
+				FA02260C171F8179008D313E /* DetailViewController.m */,
+				FA022609171F8161008D313E /* DetailViewController.xib */,
+				FA0225FC171F6CFA008D313E /* ThirdViewController.h */,
+				FA0225FD171F6CFA008D313E /* ThirdViewController.m */,
+				FA0225FA171F6CEA008D313E /* ThirdViewController.xib */,
+				FA02261D1720ABC4008D313E /* aboutClass.h */,
+				FA02261E1720ABC4008D313E /* aboutClass.m */,
+				FA0225E4171F6CA4008D313E /* first.png */,
+				FA0225E6171F6CA4008D313E /* first@2x.png */,
+				FA0225EB171F6CA4008D313E /* second.png */,
+				FA0225ED171F6CA4008D313E /* second@2x.png */,
 				FA0225D0171F6CA4008D313E /* Supporting Files */,
 			);
 			path = MDF1_tabApp2;
@@ -148,13 +157,15 @@
 		FA0225D0171F6CA4008D313E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA0226181720A71E008D313E /* bio_icon_retina.png */,
+				FA0226161720A713008D313E /* bio_icon.png */,
+				FA022614171FA1C5008D313E /* Default-568h@2x.png */,
+				FA022612171FA0F2008D313E /* Default@2x.png */,
+				FA022610171F9F44008D313E /* Default.png */,
 				FA0225D1171F6CA4008D313E /* MDF1_tabApp2-Info.plist */,
 				FA0225D2171F6CA4008D313E /* InfoPlist.strings */,
 				FA0225D5171F6CA4008D313E /* main.m */,
 				FA0225D7171F6CA4008D313E /* MDF1_tabApp2-Prefix.pch */,
-				FA0225DB171F6CA4008D313E /* Default.png */,
-				FA0225DD171F6CA4008D313E /* Default@2x.png */,
-				FA0225DF171F6CA4008D313E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,7 +187,7 @@
 			);
 			name = MDF1_tabApp2;
 			productName = MDF1_tabApp2;
-			productReference = FA0225C6171F6CA4008D313E /* MDF1_tabApp2.app */;
+			productReference = FA0225C6171F6CA4008D313E /* Zombified.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -211,9 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0225D4171F6CA4008D313E /* InfoPlist.strings in Resources */,
-				FA0225DC171F6CA4008D313E /* Default.png in Resources */,
-				FA0225DE171F6CA4008D313E /* Default@2x.png in Resources */,
-				FA0225E0171F6CA4008D313E /* Default-568h@2x.png in Resources */,
 				FA0225E5171F6CA4008D313E /* first.png in Resources */,
 				FA0225E7171F6CA4008D313E /* first@2x.png in Resources */,
 				FA0225EC171F6CA4008D313E /* second.png in Resources */,
@@ -224,6 +232,11 @@
 				FA022600171F6FA9008D313E /* SecondNavViewController.xib in Resources */,
 				FA022605171F71A9008D313E /* ThirdNavViewController.xib in Resources */,
 				FA02260A171F8162008D313E /* DetailViewController.xib in Resources */,
+				FA022611171F9F44008D313E /* Default.png in Resources */,
+				FA022613171FA0F2008D313E /* Default@2x.png in Resources */,
+				FA022615171FA1C5008D313E /* Default-568h@2x.png in Resources */,
+				FA0226171720A714008D313E /* bio_icon.png in Resources */,
+				FA0226191720A71E008D313E /* bio_icon_retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +255,7 @@
 				FA022603171F6FBF008D313E /* SecondNavViewController.m in Sources */,
 				FA022608171F71B9008D313E /* ThirdNavViewController.m in Sources */,
 				FA02260D171F817A008D313E /* DetailViewController.m in Sources */,
+				FA02261F1720ABC5008D313E /* aboutClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +351,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1_tabApp2/MDF1_tabApp2-Prefix.pch";
 				INFOPLIST_FILE = "MDF1_tabApp2/MDF1_tabApp2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zombified;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -348,7 +362,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1_tabApp2/MDF1_tabApp2-Prefix.pch";
 				INFOPLIST_FILE = "MDF1_tabApp2/MDF1_tabApp2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zombified;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

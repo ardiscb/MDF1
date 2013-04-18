@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ThirdViewController : UIViewController
-
+{
+    IBOutlet UILabel *aboutLabel;
+    NSMutableArray *detailArray;
+}
 @end

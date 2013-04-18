@@ -7,6 +7,7 @@
 //
 
 #import "ThirdViewController.h"
+#import "aboutClass.h"
 
 @interface ThirdViewController ()
 
@@ -18,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Third", @"Third");
+        self.title = NSLocalizedString(@"About", @"About");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
         // Custom initialization
     }
@@ -27,6 +28,15 @@
 
 - (void)viewDidLoad
 {
+    //create mutable array for details
+    detailArray = [[NSMutableArray alloc] init];
+    //create instance of aboutClass
+    aboutClass *developDetails = [[aboutClass alloc] initWithDetails:@"Developer info here."];
+    //add details to array
+    [detailArray addObject:developDetails];
+    //pass data to view
+    aboutLabel.text = developDetails.details;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

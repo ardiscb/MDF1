@@ -14,5 +14,6 @@
     
     NSMutableArray *movieTitleArray;
     NSMutableArray *infoArray;
+    NSString *databaseURL;
 }
 @end

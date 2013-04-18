@@ -18,7 +18,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-         self.title = NSLocalizedString(@"Third Nav", @"Third Nav");
+         self.title = NSLocalizedString(@"Zombie Films", @"Zombie Films");
         // Custom initialization
     }
     return self;

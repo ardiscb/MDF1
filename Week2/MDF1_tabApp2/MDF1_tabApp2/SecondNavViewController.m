@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-         self.title = NSLocalizedString(@"Second Nav", @"Second Nav");
+         self.title = NSLocalizedString(@"Survival", @"Survival");
         // Custom initialization
     }
     return self;

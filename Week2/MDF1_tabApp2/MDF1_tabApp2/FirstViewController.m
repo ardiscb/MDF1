@@ -19,7 +19,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = NSLocalizedString(@"Zombies", @"Zombies");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -27,6 +27,7 @@
 							
 - (void)viewDidLoad
 {
+    self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

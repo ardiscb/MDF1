@@ -10,11 +10,11 @@
 
 @interface DetailViewController : UIViewController
 {
-    IBOutlet UIButton *backBtn;
 }
-
--(IBAction)onClick:(id)sender;
 
 @property IBOutlet UILabel *movieTitleLabel;
 @property IBOutlet UILabel *reviewLabel;
+@property IBOutlet UILabel *databaseLabel;
+
+-(IBAction)onClick:(id)sender;
 @end
