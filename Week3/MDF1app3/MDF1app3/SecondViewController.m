@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "BusinessManager.h"
 
 @interface SecondViewController ()
 
@@ -26,6 +27,17 @@
 							
 - (void)viewDidLoad
 {
+    //create instance of business manager
+    [BusinessManager CreateInstance];
+    
+    //Get instance
+    BusinessManager *businessManager = [BusinessManager GetInstance];
+    if(businessManager != nil)
+    {
+        //example code
+        //[businessManager otherMethod];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

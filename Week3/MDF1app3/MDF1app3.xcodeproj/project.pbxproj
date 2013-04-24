@@ -24,6 +24,10 @@
 		FA0226EF17275650008D313E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0226EE17275650008D313E /* second@2x.png */; };
 		FA0226F217275650008D313E /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0226F017275650008D313E /* FirstViewController.xib */; };
 		FA0226F517275650008D313E /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0226F317275650008D313E /* SecondViewController.xib */; };
+		FA0226FD1727581D008D313E /* BusinessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0226FC1727581D008D313E /* BusinessManager.m */; };
+		FA0226FF17275ACD008D313E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0226FE17275ACD008D313E /* MapKit.framework */; };
+		FA02270117278879008D313E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA02270017278879008D313E /* CoreLocation.framework */; };
+		FA02270417278FF9008D313E /* ShopInfoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270317278FF9008D313E /* ShopInfoClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,12 @@
 		FA0226EE17275650008D313E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		FA0226F117275650008D313E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		FA0226F417275650008D313E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		FA0226FB1727581D008D313E /* BusinessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessManager.h; sourceTree = "<group>"; };
+		FA0226FC1727581D008D313E /* BusinessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessManager.m; sourceTree = "<group>"; };
+		FA0226FE17275ACD008D313E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA02270017278879008D313E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA02270217278FF9008D313E /* ShopInfoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoClass.h; sourceTree = "<group>"; };
+		FA02270317278FF9008D313E /* ShopInfoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA02270117278879008D313E /* CoreLocation.framework in Frameworks */,
+				FA0226FF17275ACD008D313E /* MapKit.framework in Frameworks */,
 				FA0226CB17275650008D313E /* UIKit.framework in Frameworks */,
 				FA0226CD17275650008D313E /* Foundation.framework in Frameworks */,
 				FA0226CF17275650008D313E /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +81,8 @@
 		FA0226BE1727564F008D313E = {
 			isa = PBXGroup;
 			children = (
+				FA02270017278879008D313E /* CoreLocation.framework */,
+				FA0226FE17275ACD008D313E /* MapKit.framework */,
 				FA0226D017275650008D313E /* MDF1app3 */,
 				FA0226C917275650008D313E /* Frameworks */,
 				FA0226C817275650008D313E /* Products */,
@@ -100,15 +114,19 @@
 				FA0226DA17275650008D313E /* AppDelegate.m */,
 				FA0226E217275650008D313E /* FirstViewController.h */,
 				FA0226E317275650008D313E /* FirstViewController.m */,
+				FA0226F017275650008D313E /* FirstViewController.xib */,
 				FA0226E517275650008D313E /* first.png */,
 				FA0226E717275650008D313E /* first@2x.png */,
 				FA0226E917275650008D313E /* SecondViewController.h */,
 				FA0226EA17275650008D313E /* SecondViewController.m */,
+				FA0226F317275650008D313E /* SecondViewController.xib */,
 				FA0226EC17275650008D313E /* second.png */,
 				FA0226EE17275650008D313E /* second@2x.png */,
-				FA0226F017275650008D313E /* FirstViewController.xib */,
-				FA0226F317275650008D313E /* SecondViewController.xib */,
+				FA0226FB1727581D008D313E /* BusinessManager.h */,
+				FA0226FC1727581D008D313E /* BusinessManager.m */,
 				FA0226D117275650008D313E /* Supporting Files */,
+				FA02270217278FF9008D313E /* ShopInfoClass.h */,
+				FA02270317278FF9008D313E /* ShopInfoClass.m */,
 			);
 			path = MDF1app3;
 			sourceTree = "<group>";
@@ -202,6 +220,8 @@
 				FA0226DB17275650008D313E /* AppDelegate.m in Sources */,
 				FA0226E417275650008D313E /* FirstViewController.m in Sources */,
 				FA0226EB17275650008D313E /* SecondViewController.m in Sources */,
+				FA0226FD1727581D008D313E /* BusinessManager.m in Sources */,
+				FA02270417278FF9008D313E /* ShopInfoClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
