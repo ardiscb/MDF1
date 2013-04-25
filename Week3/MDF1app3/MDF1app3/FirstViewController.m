@@ -35,8 +35,8 @@
     ShopInfoClass *shop1 = [[ShopInfoClass alloc] initWithTitle:@"Atomic Books" loca:CLLocationCoordinate2DMake(39.331303f, -76.635069f)];
     ShopInfoClass *shop2 = [[ShopInfoClass alloc] initWithTitle:@"Forbidden Planet" loca:CLLocationCoordinate2DMake(40.733419f, -73.990701f)];
     ShopInfoClass *shop3 = [[ShopInfoClass alloc] initWithTitle:@"Comic Relief" loca:CLLocationCoordinate2DMake(34.063540f, -118.368764f)];
-    ShopInfoClass *shop4 = [[ShopInfoClass alloc] initWithTitle:@"Bergen Street Comics" loca:CLLocationCoordinate2DMake(40.680749f, -73.975833f)];
-    ShopInfoClass *shop5 = [[ShopInfoClass alloc] initWithTitle:@"Secret Headquarters" loca:CLLocationCoordinate2DMake(34.091366f, -118.279131f)];
+    ShopInfoClass *shop4 = [[ShopInfoClass alloc] initWithTitle:@"The Secret Stash" loca:CLLocationCoordinate2DMake(40.35104f, -74.06543f)];
+    ShopInfoClass *shop5 = [[ShopInfoClass alloc] initWithTitle:@"Isotope Comics" loca:CLLocationCoordinate2DMake(37.776f, -122.423f)];
     ShopInfoClass *shop6 = [[ShopInfoClass alloc] initWithTitle:@"Arcane Comics" loca:CLLocationCoordinate2DMake(47.671304f, -122.376229f)];
     ShopInfoClass *shop7 = [[ShopInfoClass alloc] initWithTitle:@"Austin Books & Comics" loca:CLLocationCoordinate2DMake(30.318620f, -97.731180f)];
     ShopInfoClass *shop8 = [[ShopInfoClass alloc] initWithTitle:@"Quimby's" loca:CLLocationCoordinate2DMake(41.910718f, -87.674763f)];

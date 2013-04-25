@@ -31,6 +31,8 @@
 		FA02270717288292008D313E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270617288291008D313E /* DetailViewController.m */; };
 		FA022709172882A3008D313E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA022708172882A3008D313E /* DetailViewController.xib */; };
 		FA02270C1728A567008D313E /* MyMapAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270B1728A566008D313E /* MyMapAnnotations.m */; };
+		FA02270E1729D5A0008D313E /* bamfIcon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = FA02270D1729D5A0008D313E /* bamfIcon_retina.png */; };
+		FA0227101729D5A6008D313E /* bamfIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA02270F1729D5A6008D313E /* bamfIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		FA022708172882A3008D313E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FA02270A1728A566008D313E /* MyMapAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotations.h; sourceTree = "<group>"; };
 		FA02270B1728A566008D313E /* MyMapAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotations.m; sourceTree = "<group>"; };
+		FA02270D1729D5A0008D313E /* bamfIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bamfIcon_retina.png; path = ../bamfIcon_retina.png; sourceTree = "<group>"; };
+		FA02270F1729D5A6008D313E /* bamfIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bamfIcon.png; path = ../bamfIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 		FA0226D117275650008D313E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA02270F1729D5A6008D313E /* bamfIcon.png */,
+				FA02270D1729D5A0008D313E /* bamfIcon_retina.png */,
 				FA0226D217275650008D313E /* MDF1app3-Info.plist */,
 				FA0226D317275650008D313E /* InfoPlist.strings */,
 				FA0226D617275650008D313E /* main.m */,
@@ -220,6 +226,8 @@
 				FA0226F217275650008D313E /* FirstViewController.xib in Resources */,
 				FA0226F517275650008D313E /* SecondViewController.xib in Resources */,
 				FA022709172882A3008D313E /* DetailViewController.xib in Resources */,
+				FA02270E1729D5A0008D313E /* bamfIcon_retina.png in Resources */,
+				FA0227101729D5A6008D313E /* bamfIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

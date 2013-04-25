@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <MKMapViewDelegate>
+{
+    IBOutlet MKMapView *secondMapView;
+    
+    BOOL dirty;
+}
 
 @end

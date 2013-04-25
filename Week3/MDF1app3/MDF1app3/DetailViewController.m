@@ -43,7 +43,7 @@
     //add region to mapView
     detailMapView.region = region;
     
-    //sets labels to array index
+    //sets labels to array at index
     name.text = [NSString stringWithFormat:@"%@", comicShopName];
     latitude.text = [NSString stringWithFormat:@"%f", shopLocation.latitude];
     longitude.text = [NSString stringWithFormat:@"%f", shopLocation.longitude];
