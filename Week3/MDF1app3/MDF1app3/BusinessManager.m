@@ -17,7 +17,7 @@ static BusinessManager *_instance = nil;
 {
     if(_instance == nil)
     {
-        [[self alloc] init];
+        _instance = [[self alloc] init];
     }
 }
 

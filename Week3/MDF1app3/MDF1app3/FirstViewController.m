@@ -11,7 +11,6 @@
 #import "BusinessManager.h"
 #import "ShopInfoClass.h"
 
-
 @interface FirstViewController ()
 
 @end
@@ -22,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = NSLocalizedString(@"Top 10 Shops", @"Top 10 Shops");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -30,6 +29,9 @@
 							
 - (void)viewDidLoad
 {
+    //hide doneBtn on load
+    doneBtn.hidden = true;
+    
     ShopInfoClass *shop1 = [[ShopInfoClass alloc] initWithTitle:@"Atomic Books" loca:CLLocationCoordinate2DMake(39.331303f, -76.635069f)];
     ShopInfoClass *shop2 = [[ShopInfoClass alloc] initWithTitle:@"Forbidden Planet" loca:CLLocationCoordinate2DMake(40.733419f, -73.990701f)];
     ShopInfoClass *shop3 = [[ShopInfoClass alloc] initWithTitle:@"Comic Relief" loca:CLLocationCoordinate2DMake(34.063540f, -118.368764f)];
@@ -113,18 +115,53 @@
     DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
     if(detailView != nil)
     {
-        //set variable to object at index
-        ShopInfoClass *info = [[BusinessManager GetInstance].comicShops objectAtIndex:indexPath.row];
         //add business name to view
         detailView.comicShopName = [[shops objectAtIndex:indexPath.row]shopName];
         //detailView.comicShopName = [[shops objectAtIndex:indexPath.row]shopName];
         //add latitude and longitude to view
         detailView.shopLocation = [[shops objectAtIndex:indexPath.row]exactLocation];
         [self presentViewController:detailView animated:TRUE completion:nil];
-        detailView.shopInfo = info;
     }
 }
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        //create instance of business manager
+        [BusinessManager CreateInstance];
+        //get instance
+        BusinessManager *businessManager = [BusinessManager GetInstance];
+        NSMutableArray *shops = businessManager.comicShops;
+        
+        //delete row from array
+        [shops removeObjectAtIndex:indexPath.row];
+        //delete row from table
+        [businessTableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:true];
+    }
+}
+
+-(IBAction)onClick:(id)sender
+{
+    UIButton *button = (UIButton*)sender;
+    //if delete button is clicked
+    if(button.tag == 0)
+    {
+        //display done button
+        doneBtn.hidden = false;
+        //in edit mode
+        [businessTableView setEditing:true];
+        
+    }
+    //if done button is clicked
+    else if(button.tag == 1)
+    {
+        //get out edit mode
+        [businessTableView setEditing:false];
+        //hide done button
+        doneBtn.hidden = true;
+    }
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

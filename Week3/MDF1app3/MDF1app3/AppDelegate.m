@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
 
 @implementation AppDelegate
@@ -22,6 +20,9 @@
     UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2];
+    //change color of tab - iOS 5
+    //[[UITabBar appearance] setTintColor:[UIColor colorWithRed:25/255.0f green:25/255.0f blue:112/255.0f alpha:1]];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

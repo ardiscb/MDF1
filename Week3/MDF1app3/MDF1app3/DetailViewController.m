@@ -16,6 +16,7 @@
 @end
 
 @implementation DetailViewController
+
 @synthesize comicShopName,shopLocation,name;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -69,7 +70,6 @@
         //annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
         //animate pin drop
         annView.animatesDrop = true;
-        NSLog(@"After pin drop");
         //change pin color
         annView.pinColor = MKPinAnnotationColorGreen;
         annView.canShowCallout = YES;

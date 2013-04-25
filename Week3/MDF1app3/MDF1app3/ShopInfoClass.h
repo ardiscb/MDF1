@@ -11,8 +11,6 @@
 
 @interface ShopInfoClass : NSObject
 {
-    //NSString *shopName;
-    //CLLocationCoordinate2D exactLocation;
 }
 
 -(id)initWithTitle:(NSString*)name loca:(CLLocationCoordinate2D)loca;

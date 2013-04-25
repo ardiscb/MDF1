@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "ShopInfoClass.h"
-#import "MyMapAnnotations.h"
 
 @interface DetailViewController : UIViewController <MKMapViewDelegate>
 {
@@ -26,7 +24,6 @@
 @property (strong) NSString *comicShopName;
 @property (strong, nonatomic) UILabel *name;
 @property CLLocationCoordinate2D shopLocation;
-@property (nonatomic, retain) ShopInfoClass *shopInfo;
 
 - (IBAction)onClick:(id)sender;
 @end

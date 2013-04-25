@@ -132,7 +132,6 @@
 				FA0226EE17275650008D313E /* second@2x.png */,
 				FA0226FB1727581D008D313E /* BusinessManager.h */,
 				FA0226FC1727581D008D313E /* BusinessManager.m */,
-				FA0226D117275650008D313E /* Supporting Files */,
 				FA02270217278FF9008D313E /* ShopInfoClass.h */,
 				FA02270317278FF9008D313E /* ShopInfoClass.m */,
 				FA02270517288291008D313E /* DetailViewController.h */,
@@ -140,6 +139,7 @@
 				FA022708172882A3008D313E /* DetailViewController.xib */,
 				FA02270A1728A566008D313E /* MyMapAnnotations.h */,
 				FA02270B1728A566008D313E /* MyMapAnnotations.m */,
+				FA0226D117275650008D313E /* Supporting Files */,
 			);
 			path = MDF1app3;
 			sourceTree = "<group>";

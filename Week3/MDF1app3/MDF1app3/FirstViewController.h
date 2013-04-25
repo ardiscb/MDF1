@@ -13,7 +13,11 @@
 @interface FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *businessTableView;
+    IBOutlet UIScrollView *scrollView;
+    
+    IBOutlet UIButton *deleteBtn;
+    IBOutlet UIButton *doneBtn;
 }
 
-@property CLLocationCoordinate2D *coordinates;
+-(IBAction)onClick:(id)sender;
 @end
