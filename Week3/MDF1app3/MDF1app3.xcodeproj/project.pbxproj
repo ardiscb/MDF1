@@ -28,6 +28,9 @@
 		FA0226FF17275ACD008D313E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0226FE17275ACD008D313E /* MapKit.framework */; };
 		FA02270117278879008D313E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA02270017278879008D313E /* CoreLocation.framework */; };
 		FA02270417278FF9008D313E /* ShopInfoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270317278FF9008D313E /* ShopInfoClass.m */; };
+		FA02270717288292008D313E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270617288291008D313E /* DetailViewController.m */; };
+		FA022709172882A3008D313E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA022708172882A3008D313E /* DetailViewController.xib */; };
+		FA02270C1728A567008D313E /* MyMapAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA02270B1728A566008D313E /* MyMapAnnotations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,11 @@
 		FA02270017278879008D313E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FA02270217278FF9008D313E /* ShopInfoClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopInfoClass.h; sourceTree = "<group>"; };
 		FA02270317278FF9008D313E /* ShopInfoClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopInfoClass.m; sourceTree = "<group>"; };
+		FA02270517288291008D313E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FA02270617288291008D313E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA022708172882A3008D313E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FA02270A1728A566008D313E /* MyMapAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotations.h; sourceTree = "<group>"; };
+		FA02270B1728A566008D313E /* MyMapAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,11 @@
 				FA0226D117275650008D313E /* Supporting Files */,
 				FA02270217278FF9008D313E /* ShopInfoClass.h */,
 				FA02270317278FF9008D313E /* ShopInfoClass.m */,
+				FA02270517288291008D313E /* DetailViewController.h */,
+				FA02270617288291008D313E /* DetailViewController.m */,
+				FA022708172882A3008D313E /* DetailViewController.xib */,
+				FA02270A1728A566008D313E /* MyMapAnnotations.h */,
+				FA02270B1728A566008D313E /* MyMapAnnotations.m */,
 			);
 			path = MDF1app3;
 			sourceTree = "<group>";
@@ -206,6 +219,7 @@
 				FA0226EF17275650008D313E /* second@2x.png in Resources */,
 				FA0226F217275650008D313E /* FirstViewController.xib in Resources */,
 				FA0226F517275650008D313E /* SecondViewController.xib in Resources */,
+				FA022709172882A3008D313E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +236,8 @@
 				FA0226EB17275650008D313E /* SecondViewController.m in Sources */,
 				FA0226FD1727581D008D313E /* BusinessManager.m in Sources */,
 				FA02270417278FF9008D313E /* ShopInfoClass.m in Sources */,
+				FA02270717288292008D313E /* DetailViewController.m in Sources */,
+				FA02270C1728A567008D313E /* MyMapAnnotations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

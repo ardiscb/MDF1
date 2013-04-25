@@ -11,12 +11,12 @@
 
 @interface ShopInfoClass : NSObject
 {
-    NSString *shopName;
-    CLLocationCoordinate2D exactLocation;
+    //NSString *shopName;
+    //CLLocationCoordinate2D exactLocation;
 }
 
 -(id)initWithTitle:(NSString*)name loca:(CLLocationCoordinate2D)loca;
 
-@property (nonatomic, strong)NSString *shopName;
-@property (nonatomic, readonly)CLLocationCoordinate2D exactLocation;
+@property (nonatomic, strong) NSString *shopName;
+@property (nonatomic, readonly) CLLocationCoordinate2D exactLocation;
 @end

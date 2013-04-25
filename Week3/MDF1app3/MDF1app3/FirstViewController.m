@@ -7,8 +7,10 @@
 //
 
 #import "FirstViewController.h"
+#import "DetailViewController.h"
 #import "BusinessManager.h"
 #import "ShopInfoClass.h"
+
 
 @interface FirstViewController ()
 
@@ -101,7 +103,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //create instance of business manager
+    [BusinessManager CreateInstance];
+    //get instance
+    BusinessManager *businessManager = [BusinessManager GetInstance];
+    NSMutableArray *shops = businessManager.comicShops;
     
+    //open detail view
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if(detailView != nil)
+    {
+        //set variable to object at index
+        ShopInfoClass *info = [[BusinessManager GetInstance].comicShops objectAtIndex:indexPath.row];
+        //add business name to view
+        detailView.comicShopName = [[shops objectAtIndex:indexPath.row]shopName];
+        //detailView.comicShopName = [[shops objectAtIndex:indexPath.row]shopName];
+        //add latitude and longitude to view
+        detailView.shopLocation = [[shops objectAtIndex:indexPath.row]exactLocation];
+        [self presentViewController:detailView animated:TRUE completion:nil];
+        detailView.shopInfo = info;
+    }
 }
 
 - (void)didReceiveMemoryWarning
