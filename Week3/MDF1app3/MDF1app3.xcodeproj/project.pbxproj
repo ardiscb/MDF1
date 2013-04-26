@@ -70,8 +70,8 @@
 		FA022708172882A3008D313E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		FA02270A1728A566008D313E /* MyMapAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotations.h; sourceTree = "<group>"; };
 		FA02270B1728A566008D313E /* MyMapAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotations.m; sourceTree = "<group>"; };
-		FA02270D1729D5A0008D313E /* bamfIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bamfIcon_retina.png; path = ../bamfIcon_retina.png; sourceTree = "<group>"; };
-		FA02270F1729D5A6008D313E /* bamfIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bamfIcon.png; path = ../bamfIcon.png; sourceTree = "<group>"; };
+		FA02270D1729D5A0008D313E /* bamfIcon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamfIcon_retina.png; sourceTree = "<group>"; };
+		FA02270F1729D5A6008D313E /* bamfIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bamfIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +93,10 @@
 		FA0226BE1727564F008D313E = {
 			isa = PBXGroup;
 			children = (
-				FA02270017278879008D313E /* CoreLocation.framework */,
-				FA0226FE17275ACD008D313E /* MapKit.framework */,
 				FA0226D017275650008D313E /* MDF1app3 */,
 				FA0226C917275650008D313E /* Frameworks */,
+				FA02270017278879008D313E /* CoreLocation.framework */,
+				FA0226FE17275ACD008D313E /* MapKit.framework */,
 				FA0226C817275650008D313E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,20 +127,16 @@
 				FA0226E217275650008D313E /* FirstViewController.h */,
 				FA0226E317275650008D313E /* FirstViewController.m */,
 				FA0226F017275650008D313E /* FirstViewController.xib */,
-				FA0226E517275650008D313E /* first.png */,
-				FA0226E717275650008D313E /* first@2x.png */,
+				FA02270517288291008D313E /* DetailViewController.h */,
+				FA02270617288291008D313E /* DetailViewController.m */,
+				FA022708172882A3008D313E /* DetailViewController.xib */,
 				FA0226E917275650008D313E /* SecondViewController.h */,
 				FA0226EA17275650008D313E /* SecondViewController.m */,
 				FA0226F317275650008D313E /* SecondViewController.xib */,
-				FA0226EC17275650008D313E /* second.png */,
-				FA0226EE17275650008D313E /* second@2x.png */,
 				FA0226FB1727581D008D313E /* BusinessManager.h */,
 				FA0226FC1727581D008D313E /* BusinessManager.m */,
 				FA02270217278FF9008D313E /* ShopInfoClass.h */,
 				FA02270317278FF9008D313E /* ShopInfoClass.m */,
-				FA02270517288291008D313E /* DetailViewController.h */,
-				FA02270617288291008D313E /* DetailViewController.m */,
-				FA022708172882A3008D313E /* DetailViewController.xib */,
 				FA02270A1728A566008D313E /* MyMapAnnotations.h */,
 				FA02270B1728A566008D313E /* MyMapAnnotations.m */,
 				FA0226D117275650008D313E /* Supporting Files */,
@@ -151,6 +147,10 @@
 		FA0226D117275650008D313E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA0226E517275650008D313E /* first.png */,
+				FA0226E717275650008D313E /* first@2x.png */,
+				FA0226EC17275650008D313E /* second.png */,
+				FA0226EE17275650008D313E /* second@2x.png */,
 				FA02270F1729D5A6008D313E /* bamfIcon.png */,
 				FA02270D1729D5A0008D313E /* bamfIcon_retina.png */,
 				FA0226D217275650008D313E /* MDF1app3-Info.plist */,
