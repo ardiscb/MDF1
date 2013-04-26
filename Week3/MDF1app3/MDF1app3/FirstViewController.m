@@ -21,7 +21,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Top 10 Shops", @"Top 10 Shops");
+        self.title = NSLocalizedString(@"Comic Shop List", @"Comic Shop List");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -32,6 +32,7 @@
     //hide doneBtn on load
     doneBtn.hidden = true;
     
+    //set title and location for all shops
     ShopInfoClass *shop1 = [[ShopInfoClass alloc] initWithTitle:@"Atomic Books" loca:CLLocationCoordinate2DMake(39.331303f, -76.635069f)];
     ShopInfoClass *shop2 = [[ShopInfoClass alloc] initWithTitle:@"Forbidden Planet" loca:CLLocationCoordinate2DMake(40.733419f, -73.990701f)];
     ShopInfoClass *shop3 = [[ShopInfoClass alloc] initWithTitle:@"Comic Relief" loca:CLLocationCoordinate2DMake(34.063540f, -118.368764f)];
@@ -53,6 +54,7 @@
         NSMutableArray *shops = businessManager.comicShops;
         if(shops != nil)
         {
+            //add shops to view
             [shops addObject:shop1];
             [shops addObject:shop2];
             [shops addObject:shop3];

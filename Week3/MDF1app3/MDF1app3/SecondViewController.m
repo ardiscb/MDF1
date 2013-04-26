@@ -22,7 +22,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
+        self.title = NSLocalizedString(@"All Shops Map", @"All Shops Map");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
@@ -42,6 +42,7 @@
         span.latitudeDelta = 27.0f;
         span.longitudeDelta = 27.0f;
         
+        //set location of map
         CLLocationCoordinate2D location;
         location.latitude = 41.508577;
         location.longitude = -98.523438;
@@ -69,10 +70,13 @@
     NSMutableArray *shopAnnotations = businessManager.comicShops;
     NSLog(@"%@", shopAnnotations);
     
+    //if shops are deleted from tableView (changes are made)
     if(dirty == NO)
     {
-        if([shopAnnotations count] >0)
+        if([shopAnnotations count] > 0)
         {
+            //remove the annotations from map
+            //update/sync data
             [secondMapView removeAnnotations:secondMapView.annotations];
         }
     }
@@ -99,10 +103,10 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    //create pin view
     MKPinAnnotationView *annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
     if(annView != nil)
     {
-        //annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
         //animate pin drop
         annView.animatesDrop = true;
         //change pin color

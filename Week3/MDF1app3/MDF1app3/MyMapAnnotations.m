@@ -16,6 +16,7 @@
 {
     if((self = [super init]))
     {
+        //set method values
         title = text;
         coordinate = coord;
     }

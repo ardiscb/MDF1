@@ -54,9 +54,11 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+    //create annotations
     MyMapAnnotations *mapAnnotations = [[MyMapAnnotations alloc] initWithTitle:comicShopName coord:shopLocation];
     if(mapAnnotations != nil)
     {
+        //add annotations to map view
         [detailMapView addAnnotation:mapAnnotations];
     }
     [super viewDidAppear:true];
@@ -64,10 +66,10 @@
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
+    //create pin annotation view
     MKPinAnnotationView *annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
     if(annView != nil)
     {
-        //annView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"CustomPin"];
         //animate pin drop
         annView.animatesDrop = true;
         //change pin color

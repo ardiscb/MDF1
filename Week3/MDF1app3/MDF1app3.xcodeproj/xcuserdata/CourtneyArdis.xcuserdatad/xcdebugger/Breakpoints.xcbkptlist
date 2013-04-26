@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MDF1app3/SecondViewController.m"
-         timestampString = "388624385.292048"
+         timestampString = "388632020.692628"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "88"
-         endingLineNumber = "88"
+         startingLineNumber = "92"
+         endingLineNumber = "92"
          landmarkName = "-viewWillAppear:"
          landmarkType = "5">
       </FileBreakpoint>
