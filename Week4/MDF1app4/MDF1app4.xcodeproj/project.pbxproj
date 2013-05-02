@@ -25,6 +25,8 @@
 		FA992F441730A11F00B1AC02 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA992F421730A11F00B1AC02 /* FirstViewController.xib */; };
 		FA992F471730A11F00B1AC02 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA992F451730A11F00B1AC02 /* SecondViewController.xib */; };
 		FA992F4F1730A1AA00B1AC02 /* ItemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA992F4E1730A1AA00B1AC02 /* ItemClass.m */; };
+		FA992F531733254600B1AC02 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA992F511733254600B1AC02 /* DetailViewController.m */; };
+		FA992F541733254600B1AC02 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA992F521733254600B1AC02 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,9 @@
 		FA992F461730A11F00B1AC02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		FA992F4D1730A1AA00B1AC02 /* ItemClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemClass.h; sourceTree = "<group>"; };
 		FA992F4E1730A1AA00B1AC02 /* ItemClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemClass.m; sourceTree = "<group>"; };
+		FA992F501733254600B1AC02 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FA992F511733254600B1AC02 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA992F521733254600B1AC02 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,9 @@
 				FA992F341730A11F00B1AC02 /* FirstViewController.h */,
 				FA992F351730A11F00B1AC02 /* FirstViewController.m */,
 				FA992F421730A11F00B1AC02 /* FirstViewController.xib */,
+				FA992F501733254600B1AC02 /* DetailViewController.h */,
+				FA992F511733254600B1AC02 /* DetailViewController.m */,
+				FA992F521733254600B1AC02 /* DetailViewController.xib */,
 				FA992F3B1730A11F00B1AC02 /* SecondViewController.h */,
 				FA992F3C1730A11F00B1AC02 /* SecondViewController.m */,
 				FA992F451730A11F00B1AC02 /* SecondViewController.xib */,
@@ -193,6 +201,7 @@
 				FA992F411730A11F00B1AC02 /* second@2x.png in Resources */,
 				FA992F441730A11F00B1AC02 /* FirstViewController.xib in Resources */,
 				FA992F471730A11F00B1AC02 /* SecondViewController.xib in Resources */,
+				FA992F541733254600B1AC02 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +217,7 @@
 				FA992F361730A11F00B1AC02 /* FirstViewController.m in Sources */,
 				FA992F3D1730A11F00B1AC02 /* SecondViewController.m in Sources */,
 				FA992F4F1730A1AA00B1AC02 /* ItemClass.m in Sources */,
+				FA992F531733254600B1AC02 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "DetailViewController.h"
 #import "SecondViewController.h"
 #import "ItemClass.h"
 
@@ -181,7 +182,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    if(detailView != nil)
+    {
+        [self presentViewController:detailView animated:true completion:nil];
+    }
 }
 
 - (void)didReceiveMemoryWarning
