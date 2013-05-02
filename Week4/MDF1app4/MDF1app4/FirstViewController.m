@@ -122,6 +122,8 @@
         if([elementName isEqualToString:@"title"])
         {
             movieTitles.title = currentElement;
+            //add titles to array
+            [movies addObject:movieTitles];
         }
         if([elementName isEqualToString:@"plot_simple"])
         {
@@ -139,12 +141,8 @@
             if(movies)
             {
                 movieTitles = [[ItemClass alloc] initWithTitle:movieTitles.title moviePlot:movieTitles.plot actors:movieTitles.actors];
-                [movies addObject:movieTitles];
-                NSLog(@"movieTitles.title=%@", movieTitles.title);
             }
-
         }
-
     }
 }
 -(void)parserDidEndDocument:(NSXMLParser *)parser
@@ -170,8 +168,11 @@
     if(cell != nil)
     {
         ItemClass *titleCell = [movies objectAtIndex:indexPath.row];
-        cell.textLabel.text = titleCell.title;
-        NSLog(@"titleCell.title=%@", titleCell.title);
+        if(titleCell.title != NULL)
+        {
+            cell.textLabel.text = titleCell.title;
+            NSLog(@"titleCell.title=%@", titleCell.title);
+        }
     }
     
     return cell;
