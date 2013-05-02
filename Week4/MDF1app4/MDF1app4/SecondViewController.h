@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface SecondViewController : UIViewController <UITextViewDelegate>
+{
+    IBOutlet UITextView *xmlTextView;
+}
 @end

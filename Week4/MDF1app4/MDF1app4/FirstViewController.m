@@ -7,12 +7,16 @@
 //
 
 #import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ItemClass.h"
 
 @interface FirstViewController ()
 
 @end
 
 @implementation FirstViewController
+//@synthesize requestData;
+@synthesize movieTitles, movies;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -88,27 +92,95 @@
                 }
             }
         }
-        NSLog(@"%@", requestString);
+        NSLog(@"requestString = %@", requestString);
     }
 }
 
-//when <element> is started
+//when xml <elementName> is started
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
+    currentElement =[[NSMutableString alloc] init];
     // parse item
-    if([elementName isEqualToString:@"rating"])
+    if([elementName isEqualToString:@"item"])
     {
-        
-        
-        
+        movieTitles = [[ItemClass alloc] init];
     }
+}
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
+{
+    if (string != nil)
+    {
+        //append string to mutable string
+        [currentElement appendString:string];
+    }
+
 }
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
-    if([elementName isEqualToString:@"rating"])
+    if(currentElement != nil)
     {
-        
+        if([elementName isEqualToString:@"title"])
+        {
+            movieTitles.title = currentElement;
+        }
+        if([elementName isEqualToString:@"plot_simple"])
+        {
+            movieTitles.plot = currentElement;
+            NSLog(@"movieTitles.plot=%@", movieTitles.plot);
+        }
+        if([elementName isEqualToString:@"actors"])
+        {
+            movieTitles.actors = currentElement;
+            NSLog(@"movieTitles.actors=%@", movieTitles.actors);
+
+        }
+        if([elementName isEqualToString:@"item"])
+        {
+            if(movies)
+            {
+                movieTitles = [[ItemClass alloc] initWithTitle:movieTitles.title moviePlot:movieTitles.plot actors:movieTitles.actors];
+                [movies addObject:movieTitles];
+                NSLog(@"movieTitles.title=%@", movieTitles.title);
+            }
+
+        }
+
     }
+}
+-(void)parserDidEndDocument:(NSXMLParser *)parser
+{
+    [uiTableView reloadData];
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    if(movies != nil)
+    {
+        return [movies count];
+        NSLog(@"movie count%d", [movies count]);
+    }
+    return 0;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    //create instance of table view
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+
+    if(cell != nil)
+    {
+        ItemClass *titleCell = [movies objectAtIndex:indexPath.row];
+        cell.textLabel.text = titleCell.title;
+        NSLog(@"titleCell.title=%@", titleCell.title);
+    }
+    
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
 }
 
 - (void)didReceiveMemoryWarning

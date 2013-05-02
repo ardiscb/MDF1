@@ -12,9 +12,13 @@
 {
     NSString *title;
     NSString *plot;
+    NSString *actors;
 }
 
--(id)initWithTitle:(NSString*)movieTitle moviePlot:(NSString*)moviePlot;
+@property (nonatomic,retain)NSString *title;
+@property (nonatomic,retain)NSString *plot;
+@property (nonatomic,retain)NSString *actors;
 
+-(id)initWithTitle:(NSString*)movieTitle moviePlot:(NSString*)moviePlot actors:(NSString*)actors;
 
 @end

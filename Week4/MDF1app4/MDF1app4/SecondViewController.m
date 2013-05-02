@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "FirstViewController.h"
 
 @interface SecondViewController ()
 
@@ -26,6 +27,7 @@
 							
 - (void)viewDidLoad
 {
+    //xmlTextView.text = requestData;
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

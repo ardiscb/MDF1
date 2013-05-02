@@ -9,13 +9,17 @@
 #import "ItemClass.h"
 
 @implementation ItemClass
--(id)initWithTitle:(NSString*)movieTitle moviePlot:(NSString*)moviePlot
+@synthesize plot, title, actors;
+
+-(id)initWithTitle:(NSString*)movieTitle moviePlot:(NSString*)moviePlot actors:(NSString*)movieActors
 {
     if((self = [super init]))
     {
         title = movieTitle;
         plot = moviePlot;
+        actors = movieActors;
     }
     return self;
 }
+
 @end
