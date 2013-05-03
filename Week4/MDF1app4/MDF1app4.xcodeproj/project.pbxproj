@@ -27,6 +27,8 @@
 		FA992F4F1730A1AA00B1AC02 /* ItemClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FA992F4E1730A1AA00B1AC02 /* ItemClass.m */; };
 		FA992F531733254600B1AC02 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA992F511733254600B1AC02 /* DetailViewController.m */; };
 		FA992F541733254600B1AC02 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA992F521733254600B1AC02 /* DetailViewController.xib */; };
+		FA992F561733439500B1AC02 /* filmIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FA992F551733439500B1AC02 /* filmIcon.png */; };
+		FA992F581733439900B1AC02 /* filmIconRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = FA992F571733439900B1AC02 /* filmIconRetina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		FA992F501733254600B1AC02 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FA992F511733254600B1AC02 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		FA992F521733254600B1AC02 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		FA992F551733439500B1AC02 /* filmIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filmIcon.png; sourceTree = "<group>"; };
+		FA992F571733439900B1AC02 /* filmIconRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filmIconRetina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 		FA992F231730A11F00B1AC02 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA992F571733439900B1AC02 /* filmIconRetina.png */,
+				FA992F551733439500B1AC02 /* filmIcon.png */,
 				FA992F241730A11F00B1AC02 /* MDF1app4-Info.plist */,
 				FA992F251730A11F00B1AC02 /* InfoPlist.strings */,
 				FA992F281730A11F00B1AC02 /* main.m */,
@@ -202,6 +208,8 @@
 				FA992F441730A11F00B1AC02 /* FirstViewController.xib in Resources */,
 				FA992F471730A11F00B1AC02 /* SecondViewController.xib in Resources */,
 				FA992F541733254600B1AC02 /* DetailViewController.xib in Resources */,
+				FA992F561733439500B1AC02 /* filmIcon.png in Resources */,
+				FA992F581733439900B1AC02 /* filmIconRetina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

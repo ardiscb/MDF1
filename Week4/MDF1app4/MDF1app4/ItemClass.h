@@ -20,5 +20,4 @@
 @property (nonatomic,retain)NSString *actors;
 
 -(id)initWithTitle:(NSString*)movieTitle moviePlot:(NSString*)moviePlot actors:(NSString*)actors;
-
 @end

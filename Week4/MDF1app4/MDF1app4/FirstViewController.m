@@ -16,8 +16,7 @@
 @end
 
 @implementation FirstViewController
-//@synthesize requestData;
-@synthesize movieTitles, movies;
+@synthesize movieTitles, movies, requestString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,7 +65,7 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
     //all information in requestData
-    NSString *requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
+    requestString = [[NSString alloc] initWithData:requestData encoding:NSASCIIStringEncoding];
     if(requestString != nil)
     {
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

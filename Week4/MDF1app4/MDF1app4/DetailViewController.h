@@ -8,10 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+@class ItemClass;
+
 @interface DetailViewController : UIViewController <UITextViewDelegate>
 {
     IBOutlet UITextView *detailTextView;
+    
+    ItemClass *movieInfo;
+    NSString *titleMovie;
+    NSString *plot;
+    NSString *actors;
 }
+
+@property (nonatomic, retain) NSString *titleMovie;
+@property (nonatomic, retain) NSString *plot;
+@property (nonatomic, retain) NSString *actors;
+@property (nonatomic, retain) ItemClass *movieTitles;
+
 
 -(IBAction)onClick:(id)sender;
 @end

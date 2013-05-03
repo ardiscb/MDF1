@@ -14,20 +14,22 @@
 @end
 
 @implementation SecondViewController
-
+@synthesize requestString, delegate;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Second", @"Second");
         self.tabBarItem.image = [UIImage imageNamed:@"second"];
+        delegate = nil;
     }
     return self;
 }
 							
 - (void)viewDidLoad
 {
-    //xmlTextView.text = requestData;
+    xmlTextView.text = requestString;
+    NSLog(@"request data in SecondView = %@", requestString);
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }

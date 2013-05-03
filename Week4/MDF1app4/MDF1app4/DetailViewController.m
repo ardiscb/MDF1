@@ -7,13 +7,15 @@
 //
 
 #import "DetailViewController.h"
+#import "ItemClass.h"
+#import "FirstViewController.h"
 
 @interface DetailViewController ()
 
 @end
 
 @implementation DetailViewController
-
+@synthesize movieTitles, plot, actors, titleMovie, title;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -25,6 +27,8 @@
 
 - (void)viewDidLoad
 {
+    self.titleMovie = movieInfo.title;
+    detailTextView.text = [NSString stringWithFormat:@"Title: \n%@\nPlot: \n%@\nActors: \n%@\n", movieTitles.title,movieInfo.plot, movieInfo.actors];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

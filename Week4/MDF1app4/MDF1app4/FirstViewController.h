@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 @class ItemClass;
 
 @interface FirstViewController : UIViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate, UITableViewDataSource, UITableViewDelegate>
@@ -19,21 +20,14 @@
     
     //receives data from request
     NSMutableData *requestData;
+    NSString *requestString;
+    
     NSMutableArray *movies;
-    
-    //store parsed data
-//    NSMutableArray *movies;
-//        
-//    NSString *title;
-//    NSString *directors;
-//    NSString *actors;
-//    NSString *plot;
-    
     NSMutableString *currentElement;
 }
 
 @property (nonatomic, retain) ItemClass *movieTitles;
 @property (nonatomic, retain) NSMutableArray *movies;
-//@property (nonatomic, strong)NSMutableData *requestData;
+@property (nonatomic, retain) NSString *requestString;
 
 @end
