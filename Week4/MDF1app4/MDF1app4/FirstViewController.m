@@ -92,7 +92,7 @@
                 }
             }
         }
-        //NSLog(@"requestString = %@", requestString);
+        NSLog(@"requestString from FirstView = %@", requestString);
     }
 }
 
@@ -191,6 +191,7 @@
 
 -(NSString *)xmlString
 {
+    
     return requestString;
 }
 

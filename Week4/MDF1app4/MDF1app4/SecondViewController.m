@@ -14,7 +14,7 @@
 @end
 
 @implementation SecondViewController
-@synthesize xmlTextView;
+@synthesize xmlTextView, xmlString, delegate;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,13 +27,10 @@
 							
 - (void)viewDidLoad
 {
-    //load default text
     xmlTextView.delegate = self;
+    xmlTextView.text = [delegate xmlString];
     
-    //load raw xml
-    //xmlTextView.text = ;
-    
-    //NSLog(@"request data in SecondView = %@", xmlString);
+    NSLog(@"request data in SecondView = %@", [delegate xmlString]);
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
