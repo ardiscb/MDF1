@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA992F191730A11F00B1AC02 /* MDF1app4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1app4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA992F191730A11F00B1AC02 /* MovieBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA992F1C1730A11F00B1AC02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA992F1E1730A11F00B1AC02 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA992F201730A11F00B1AC02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,7 +90,7 @@
 		FA992F1A1730A11F00B1AC02 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA992F191730A11F00B1AC02 /* MDF1app4.app */,
+				FA992F191730A11F00B1AC02 /* MovieBase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 			);
 			name = MDF1app4;
 			productName = MDF1app4;
-			productReference = FA992F191730A11F00B1AC02 /* MDF1app4.app */;
+			productReference = FA992F191730A11F00B1AC02 /* MovieBase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +321,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1app4/MDF1app4-Prefix.pch";
 				INFOPLIST_FILE = "MDF1app4/MDF1app4-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MovieBase;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -332,7 +332,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MDF1app4/MDF1app4-Prefix.pch";
 				INFOPLIST_FILE = "MDF1app4/MDF1app4-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MovieBase;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

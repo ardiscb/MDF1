@@ -7,17 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@protocol displayXML <NSObject>
 
-@required
--(NSString *)xmlString;
 
-@end
 @interface SecondViewController : UIViewController <UITextViewDelegate>
 {
     IBOutlet UITextView *xmlTextView;
-    id<displayXML> delegate;
 }
-@property (nonatomic, copy) NSString *requestString;
-@property (strong) id<displayXML> delegate;
+
+@property (nonatomic, strong) IBOutlet UITextView *xmlTextView;
+@property (nonatomic, copy) NSString *xmlString;
 @end

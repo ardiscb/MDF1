@@ -10,8 +10,17 @@
 #import "SecondViewController.h"
 @class ItemClass;
 
+@protocol displayXML <NSObject>
+
+@required
+-(NSString *)xmlString;
+
+@end
+
 @interface FirstViewController : UIViewController <NSURLConnectionDataDelegate, NSXMLParserDelegate, UITableViewDataSource, UITableViewDelegate>
 {
+    id<displayXML> delegate;
+    
     IBOutlet UITableView *uiTableView;
     
     NSURLRequest *request;
@@ -29,5 +38,6 @@
 @property (nonatomic, retain) ItemClass *movieTitles;
 @property (nonatomic, retain) NSMutableArray *movies;
 @property (nonatomic, retain) NSString *requestString;
+@property (strong) id<displayXML> delegate;
 
 @end

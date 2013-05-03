@@ -16,13 +16,13 @@
 @end
 
 @implementation FirstViewController
-@synthesize movieTitles, movies, requestString;
+@synthesize movieTitles, movies, requestString, delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
+        self.title = NSLocalizedString(@"Movies", @"Movies");
         self.tabBarItem.image = [UIImage imageNamed:@"first"];
     }
     return self;
@@ -92,7 +92,7 @@
                 }
             }
         }
-        NSLog(@"requestString = %@", requestString);
+        //NSLog(@"requestString = %@", requestString);
     }
 }
 
@@ -186,6 +186,12 @@
     {
         [self presentViewController:detailView animated:true completion:nil];
     }
+}
+
+
+-(NSString *)xmlString
+{
+    return requestString;
 }
 
 - (void)didReceiveMemoryWarning
